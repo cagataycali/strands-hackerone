@@ -37,6 +37,9 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# setuptools-scm generated version file
+*/_version.py
+
 # RenderCV outputs (keep examples/rendercv_output for demos)
 rendercv_output/
 *.pdf
