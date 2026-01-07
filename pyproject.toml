@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strands-hackerone"
+dynamic = ["version"]
+description = "Strands Agents tool for accessing hackerone"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "strands-agents",
+    "requests>=2.28.0"
+]
+authors = [
+    {name = "Cagatay Cali", email = "cagataycali@gmail.com"}
+]
+keywords = ["strands", "agents", "strands-agents", "hackerone"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/cagataycali/strands-hackerone"
+Repository = "https://github.com/cagataycali/strands-hackerone"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["strands_hackerone*"]
+exclude = ["examples*", "tests*", "*.tests*"]
+
+[tool.setuptools_scm]
+write_to = "strands_hackerone/_version.py"
