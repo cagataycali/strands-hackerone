@@ -10,7 +10,7 @@ pip install strands-hackerone
 
 ## Setup
 
-Get API credentials from [HackerOne Settings](https://hackerone.com/settings/api_token):
+Get API credentials from [HackerOne Settings](https://hackerone.com/settings/api_token/edit):
 
 ```bash
 export HACKERONE_USERNAME="your_username"
@@ -113,33 +113,6 @@ agent = Agent(
 )
 
 agent("Check for new critical disclosures in the last 24 hours")
-```
-
-## Output Format
-
-All actions return:
-
-```python
-{
-    "status": "success" | "error",
-    "content": [{"text": "formatted_output"}]
-}
-```
-
-Example output:
-
-```
-🔥 HackerOne Hacktivity (Page 1)
-
-🎯 Stored XSS in Profile Editor
-   Program: gitlab
-   Severity: high
-   Bounty: $3,500
-
-🎯 SQL Injection in API Endpoint
-   Program: shopify
-   Severity: critical
-   Bounty: $10,000
 ```
 
 ## Troubleshooting
