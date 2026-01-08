@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "strands-hackerone"
 dynamic = ["version"]
-description = "Strands Agents tool for accessing hackerone"
+description = "HackerOne API tool for Strands Agents. Automate bug bounty research, program monitoring, and report management with AI."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
